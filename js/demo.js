@@ -13,12 +13,11 @@ $(function () {
             alert("请输入正确的姓名")
             return false;
         };
-        var isNum = / ^[0-9]*$/;
         if (score_val == '') {
             alert("请输入成绩");
             return false;
         };
-        if (!isNum.test(score_val)) {
+        if (isNaN(score_val)) {
             alert("请输入正确成绩")
             return false;
         };
